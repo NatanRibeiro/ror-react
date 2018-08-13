@@ -30,9 +30,9 @@ class AllItems extends React.Component {
         var items = this.state.items.map((item)=> {
             return (
                 <div key={item.id}>
-                    <h3>{item.name}</h3>
-                    <p>{item.description}</p>
-                    <button onClick={this.handleDelete.bind(this, item.id)}>Delete</button>
+                    <Item item={item} 
+                    handleEdit={this.handleEdit}
+                    handleDelete={this.handleDelete.bind(this, item.id)} />
                 </div>
             )
         });

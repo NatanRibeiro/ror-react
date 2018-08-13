@@ -1986,3 +1986,463 @@ Processing by Api::V1::ItemsController#index as JSON
 Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:27:07 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1433ms (Views: 1413.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:27:09 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 17ms (Views: 9.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:31:45 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:31:45 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 6ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:32:10 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 444ms (Views: 442.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:32:11 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 16ms (Views: 8.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:33:03 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 477ms (Views: 475.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:33:04 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 16ms (Views: 8.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:33:38 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 455ms (Views: 452.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:33:39 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:34:55 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 477ms (Views: 474.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:34:56 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 16ms (Views: 9.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:35:37 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:35:47 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 8ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:38:50 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 449ms (Views: 447.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:38:55 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 22ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:50:15 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 457ms (Views: 455.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:50:16 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 15ms (Views: 7.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:53:51 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 464ms (Views: 462.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:53:52 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 15ms (Views: 7.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:55:21 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 233ms (Views: 231.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:55:22 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 12ms (Views: 5.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:56:12 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 495ms (Views: 492.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:56:34 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 477ms (Views: 474.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:56:35 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 18ms (Views: 9.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:57:19 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:57:20 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 6ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 21:59:07 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 481ms (Views: 479.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 21:59:09 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 16ms (Views: 8.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:00:52 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 475ms (Views: 473.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:00:53 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 17ms (Views: 9.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:05:37 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 519ms (Views: 516.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:05:38 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:07:30 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 466ms (Views: 463.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:07:31 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 13ms (Views: 6.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:10:59 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 457ms (Views: 455.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:11:00 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 23ms (Views: 16.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:12:36 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 461ms (Views: 459.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:12:37 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 15ms (Views: 6.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:16:06 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 469ms (Views: 467.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:16:07 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 14ms (Views: 6.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:16:26 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:16:26 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:18:55 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 459ms (Views: 457.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:18:56 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 17ms (Views: 8.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:20:15 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 512ms (Views: 510.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:20:16 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 15ms (Views: 7.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:21:47 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 462ms (Views: 460.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:21:48 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 14ms (Views: 5.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:23:57 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 466ms (Views: 464.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:23:58 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 15ms (Views: 7.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:24:20 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:24:21 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:26:13 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:26:14 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:27:32 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 462ms (Views: 460.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:27:33 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:29:41 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 470ms (Views: 468.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:29:42 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 12ms (Views: 6.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 22:33:53 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 468ms (Views: 466.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 22:33:54 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 17ms (Views: 8.6ms | ActiveRecord: 0.7ms)
+
+
