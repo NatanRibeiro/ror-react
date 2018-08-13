@@ -1,6 +1,4 @@
-//var Header = createReactClass({
 class Header extends React.Component {   
-
     render(){
         return (
             <div>
