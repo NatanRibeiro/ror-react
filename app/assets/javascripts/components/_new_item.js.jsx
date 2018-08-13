@@ -26,7 +26,7 @@ class NewItem extends React.Component {
             type: 'POST',
             data: { item: { name: name, description: description}},
             success: response=> {
-                console.log('it worked!', response);
+                this.props.handleSubmit(item);
             }
         });
     }

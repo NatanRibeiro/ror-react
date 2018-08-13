@@ -1,28 +1,46 @@
-// //var AllItems = createReactClass({
-// class AllItems extends React.Component {   
+class AllItems extends React.Component {   
+    constructor(props){
+        super(props);
+        this.state = { items: []}
+    }
 
-//     getInitialState(){
-//         return { items: []}
-//     }
+    componentDidMount(){
+        $.getJSON('/api/v1/items.json', (response)=> { this.setState({ items: response})});
+    }
 
-//     componentDidMount(){
-//         $.getJSON('/api/v1/items.json', (response)=> { this.setState({ items: response})});
-//     }
+    handleDelete(id){
+        $.ajax({
+          url: `/api/v1/items/${id}`,
+          type: 'DELETE',
+          success: ()=> {
+            this.removeItemClient(id);
+          }
+        });
+    }
 
-//     render(){   
-//         var items = this.state.items.map((item)=> {
-//             return (
-//                 <div key={item.id}>
-//                     <h3>{item.name}</h3>
-//                     <p>{item.description}</p>
-//                 </div>
-//             )
-//         });
+    removeItemClient(id){
+        var newItems = this.state.items.filter((item) => {
+            return item.id != id;
+        });
 
-//         return(
-//             <div>  
-//                 {items}
-//             </div>
-//         );
-//     }
-// };
+        this.setState({ items: newItems});
+    }
+
+    render(){   
+        var items = this.state.items.map((item)=> {
+            return (
+                <div key={item.id}>
+                    <h3>{item.name}</h3>
+                    <p>{item.description}</p>
+                    <button onClick={this.handleDelete.bind(this, item.id)}>Delete</button>
+                </div>
+            )
+        });
+
+        return(
+            <div>  
+                {items}
+            </div>
+        );
+    }
+};

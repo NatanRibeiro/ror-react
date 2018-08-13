@@ -1013,3 +1013,976 @@ Processing by Api::V1::ItemsController#index as JSON
 Completed 200 OK in 14ms (Views: 8.1ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for ::1 at 2018-08-12 18:08:51 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1429ms (Views: 1408.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 18:12:00 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 451ms (Views: 449.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 18:12:25 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 442ms (Views: 440.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 18:12:40 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 18:13:29 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 460ms (Views: 458.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 18:13:40 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 20ms (Views: 12.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 18:21:09 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 668ms (Views: 665.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 18:21:35 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 468ms (Views: 466.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 18:21:39 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 18ms (Views: 9.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 19:51:01 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 685ms (Views: 682.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 19:51:05 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 25ms (Views: 14.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/v1/items" for ::1 at 2018-08-12 19:51:26 -0400
+Processing by Api::V1::ItemsController#create as */*
+  Parameters: {"item"=>{"name"=>"XBOX", "description"=>"This is a MS console"}}
+Started GET "/?name=XBOX&description=This+is+a+MS+console" for ::1 at 2018-08-12 19:51:26 -0400
+Can't verify CSRF token authenticity.
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:7
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "XBOX"], ["description", "This is a MS console"], ["created_at", "2018-08-12 23:51:26.664377"], ["updated_at", "2018-08-12 23:51:26.664377"]]
+  ↳ app/controllers/api/v1/items_controller.rb:7
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:7
+Completed 201 Created in 17ms (Views: 1.4ms | ActiveRecord: 2.8ms)
+
+
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"XBOX", "description"=>"This is a MS console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 501ms (Views: 499.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 19:51:27 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 17ms (Views: 10.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 19:54:05 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 454ms (Views: 452.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 19:54:06 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/items" for ::1 at 2018-08-12 19:54:23 -0400
+Processing by Api::V1::ItemsController#create as */*
+  Parameters: {"item"=>{"name"=>"SWITCH", "description"=>"This is a NINTENDO console"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:7
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "SWITCH"], ["description", "This is a NINTENDO console"], ["created_at", "2018-08-12 23:54:23.395763"], ["updated_at", "2018-08-12 23:54:23.395763"]]
+  ↳ app/controllers/api/v1/items_controller.rb:7
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:7
+Started GET "/?name=SWITCH&description=This+is+a+NINTENDO+console" for ::1 at 2018-08-12 19:54:23 -0400
+Completed 201 Created in 9ms (Views: 0.7ms | ActiveRecord: 1.1ms)
+
+
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"SWITCH", "description"=>"This is a NINTENDO console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 19:54:23 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 8ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/?name=SWITCH&description=This+is+a+NINTENDO+console" for ::1 at 2018-08-12 19:59:19 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"SWITCH", "description"=>"This is a NINTENDO console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 699ms (Views: 696.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?name=SWITCH&description=This+is+a+NINTENDO+console" for ::1 at 2018-08-12 19:59:26 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"SWITCH", "description"=>"This is a NINTENDO console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 216ms (Views: 214.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 19:59:27 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 15ms (Views: 8.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?name=SWITCH&description=This+is+a+NINTENDO+console" for ::1 at 2018-08-12 20:06:52 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"SWITCH", "description"=>"This is a NINTENDO console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 461ms (Views: 459.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 20:06:53 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 18ms (Views: 12.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/api/v1/items1" for ::1 at 2018-08-12 20:06:56 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/items1"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/?name=SWITCH&description=This+is+a+NINTENDO+console" for ::1 at 2018-08-12 20:07:17 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"SWITCH", "description"=>"This is a NINTENDO console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 466ms (Views: 464.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 20:07:18 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 18ms (Views: 9.7ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:20 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 8ms (ActiveRecord: 1.7ms)
+
+
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:22 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:22 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:23 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:23 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:24 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:24 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:25 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:25 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:25 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:25 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:26 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:26 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:26 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:26 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:27 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:27 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:28 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/1" for ::1 at 2018-08-12 20:07:28 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started GET "/?name=SWITCH&description=This+is+a+NINTENDO+console" for ::1 at 2018-08-12 20:07:55 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"SWITCH", "description"=>"This is a NINTENDO console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 457ms (Views: 455.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 20:07:56 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 21ms (Views: 12.8ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/api/v1/items/2" for ::1 at 2018-08-12 20:07:57 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"2"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 9ms (ActiveRecord: 1.9ms)
+
+
+Started DELETE "/api/v1/items/2" for ::1 at 2018-08-12 20:08:01 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"2"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=2):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/2" for ::1 at 2018-08-12 20:08:02 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"2"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=2):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/2" for ::1 at 2018-08-12 20:08:02 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"2"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=2):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/2" for ::1 at 2018-08-12 20:08:03 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"2"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=2):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/2" for ::1 at 2018-08-12 20:08:03 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"2"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=2):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started GET "/?name=SWITCH&description=This+is+a+NINTENDO+console" for ::1 at 2018-08-12 20:08:08 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"SWITCH", "description"=>"This is a NINTENDO console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 20:08:09 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/api/v1/items/3" for ::1 at 2018-08-12 20:08:14 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"3"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 7ms (ActiveRecord: 1.7ms)
+
+
+Started DELETE "/api/v1/items/3" for ::1 at 2018-08-12 20:08:18 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"3"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=3):
+  
+app/controllers/api/v1/items_controller.rb:11:in `destroy'
+Started DELETE "/api/v1/items/4" for ::1 at 2018-08-12 20:08:20 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"4"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 8ms (ActiveRecord: 1.6ms)
+
+
+Started DELETE "/api/v1/items/5" for ::1 at 2018-08-12 20:08:22 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"5"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 7ms (ActiveRecord: 1.8ms)
+
+
+Started DELETE "/api/v1/items/6" for ::1 at 2018-08-12 20:08:23 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"6"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 6ms (ActiveRecord: 1.7ms)
+
+
+Started DELETE "/api/v1/items/8" for ::1 at 2018-08-12 20:08:25 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"8"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/?name=SWITCH&description=This+is+a+NINTENDO+console" for ::1 at 2018-08-12 20:08:26 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"SWITCH", "description"=>"This is a NINTENDO console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 20:08:27 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 20:10:07 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 459ms (Views: 456.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 20:10:08 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 20ms (Views: 12.1ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/api/v1/items/9" for ::1 at 2018-08-12 20:10:11 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"9"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 8ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 20:10:40 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 505ms (Views: 503.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 20:10:41 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 18ms (Views: 9.6ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/api/v1/items/7" for ::1 at 2018-08-12 20:10:43 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"7"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 8ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 20:11:01 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 464ms (Views: 462.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 20:11:02 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 20ms (Views: 12.1ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/api/v1/items/10" for ::1 at 2018-08-12 20:11:04 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"10"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 8ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 20:12:34 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 476ms (Views: 473.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 20:12:35 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 20ms (Views: 10.4ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/api/v1/items/19" for ::1 at 2018-08-12 20:12:52 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"19"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 19]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 8ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2018-08-12 20:13:56 -0400
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 474ms (Views: 471.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 20:13:57 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 17ms (Views: 10.1ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/api/v1/items/11" for ::1 at 2018-08-12 20:13:59 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"11"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 11]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 8ms (ActiveRecord: 1.8ms)
+
+
+Started DELETE "/api/v1/items/12" for ::1 at 2018-08-12 20:13:59 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"12"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 8ms (ActiveRecord: 1.8ms)
+
+
+Started DELETE "/api/v1/items/13" for ::1 at 2018-08-12 20:14:00 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"13"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 9ms (ActiveRecord: 2.1ms)
+
+
+Started DELETE "/api/v1/items/14" for ::1 at 2018-08-12 20:14:00 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"14"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 14]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 7ms (ActiveRecord: 2.1ms)
+
+
+Started DELETE "/api/v1/items/15" for ::1 at 2018-08-12 20:14:01 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"15"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 15]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 6ms (ActiveRecord: 1.6ms)
+
+
+Started DELETE "/api/v1/items/16" for ::1 at 2018-08-12 20:14:01 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"16"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 9ms (ActiveRecord: 1.9ms)
+
+
+Started DELETE "/api/v1/items/17" for ::1 at 2018-08-12 20:14:01 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"17"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 8ms (ActiveRecord: 1.6ms)
+
+
+Started DELETE "/api/v1/items/18" for ::1 at 2018-08-12 20:14:02 -0400
+Processing by Api::V1::ItemsController#destroy as */*
+  Parameters: {"id"=>"18"}
+Can't verify CSRF token authenticity.
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 18]]
+  ↳ app/controllers/api/v1/items_controller.rb:11
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:11
+Completed 204 No Content in 8ms (ActiveRecord: 2.0ms)
+
+
+Started POST "/api/v1/items" for ::1 at 2018-08-12 20:14:14 -0400
+Processing by Api::V1::ItemsController#create as */*
+  Parameters: {"item"=>{"name"=>"PS4", "description"=>"This is a SONY console"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:7
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "PS4"], ["description", "This is a SONY console"], ["created_at", "2018-08-13 00:14:14.183318"], ["updated_at", "2018-08-13 00:14:14.183318"]]
+  ↳ app/controllers/api/v1/items_controller.rb:7
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/items_controller.rb:7
+Completed 201 Created in 8ms (Views: 1.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/?name=PS4&description=This+is+a+SONY+console" for ::1 at 2018-08-12 20:14:14 -0400
+Processing by SiteController#index as HTML
+  Parameters: {"name"=>"PS4", "description"=>"This is a SONY console"}
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/items.json" for ::1 at 2018-08-12 20:14:14 -0400
+Processing by Api::V1::ItemsController#index as JSON
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:3
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
